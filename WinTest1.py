@@ -12,7 +12,7 @@ def window():
    w.setWindowTitle("PyQt Dialog demo")
    w.show()
    sys.exit(app.exec_())
-	
+
 def showdialog():
    d = QDialog()
    b1 = QPushButton("ok",d)
@@ -21,6 +21,6 @@ def showdialog():
    d.setWindowModality(Qt.ApplicationModal)
    d.exec_()
 
-	
+
 if __name__ == '__main__':
    window()

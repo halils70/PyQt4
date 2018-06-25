@@ -1,0 +1,9 @@
+        self.connect(btn1, QtCore.SIGNAL("clicked()"), lambda who = self.sender(): self.btn2_f(who))
+        self.connect(btn2, QtCore.SIGNAL("clicked()"), lambda who = self.sender(): self.btn2_f(who))
+        self.connect(btn3, QtCore.SIGNAL("clicked()"), lambda who = self.sender(): self.btn2_f(who))
+        self.connect(btn4, QtCore.SIGNAL("clicked()"), lambda who = self.sender(): self.btn2_f(who))
+        self.connect(btn5, QtCore.SIGNAL("clicked()"), lambda who = self.sender(): self.btn2_f(who))
+
+    def btn2_f (self, who):
+        button = self.sender()
+        self.lbl1.setText(button.text())
